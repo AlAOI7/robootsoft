@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Optimization -->
+    <title>Robotsoft ERP | حلول ذكية لإدارة المال والأعمال والتطبيقات</title>
+    <meta name="description" content="شركة Robotsoft ERP تقدم أنظمة سحابية ومحلية متكاملة للمحاسبة والمخازن والموارد البشرية ونقاط البيع وحلول التحول الرقمي للشركات الكبرى والمتوسطة.">
+    <meta name="keywords" content="ERP, نظام محاسبي, إدارة المستودعات, الموارد البشرية, نقاط البيع, CRM, التحول الرقمي, أرشفة إلكترونية, Robotsoft, روبوت سوفت">
+    <meta name="author" content="Robotsoft ERP">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Robotsoft ERP | حلول ذكية لإدارة المال والأعمال">
+    <meta property="og:description" content="أنظمة إدارة موارد المؤسسات المتكاملة للتحول الرقمي والأعمال.">
+    <meta property="og:type" content="website">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpeg">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-logo">
+            <div class="loader-circle"></div>
+            <div class="loader-circle-inner"></div>
+            <img src="assets/logo.jpeg" alt="Robotsoft Logo" class="loader-icon-img">
+        </div>
+        <h2 data-ar="روبوت سوفت للأنظمة" data-en="Robotsoft Systems" style="font-weight: 800; font-size: 1.5rem; letter-spacing: 1px; color: var(--primary);">روبوت سوفت للأنظمة</h2>
+        <div class="loader-bar-container">
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.jpeg" alt="Robotsoft Logo" class="logo-img">
+                <span data-ar="روبوت سوفت" data-en="Robotsoft ERP">روبوت سوفت</span>
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link active" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                
+                <!-- Mega Menu Link -->
+                <div class="has-mega-menu">
+                    <a href="#" class="nav-link" data-ar="الأنظمة ▾" data-en="Systems ▾">الأنظمة ▾</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-grid">
+                            <!-- Column 1 -->
+                            <div class="mega-menu-column">
+                                <h4 data-ar="الأنظمة المالية" data-en="Financial Systems">الأنظمة المالية</h4>
+                                <div class="mega-menu-list">
+                                    <a href="#" class="mega-menu-item" data-modal-target="system-modal" data-system="accounting">
+                                        <svg class="mega-menu-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                                        <div class="mega-menu-info">
+                                            <h5 data-ar="النظام المحاسبي" data-en="Accounting System">النظام المحاسبي</h5>
+                                            <p data-ar="إدارة الحسابات العامة" data-en="General ledger management">إدارة الحسابات العامة</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-modal-target="system-modal" data-system="assets">
+                                        <svg class="mega-menu-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                                        <div class="mega-menu-info">
+                                            <h5 data-ar="الأصول الثابتة" data-en="Fixed Assets">الأصول الثابتة</h5>
+                                            <p data-ar="تتبع وإهلاك الأصول" data-en="Depreciation & assets tracking">تتبع وإهلاك الأصول</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Column 2 -->
+                            <div class="mega-menu-column">
+                                <h4 data-ar="المبيعات واللوجستيات" data-en="Sales & Logistics">المبيعات واللوجستيات</h4>
+                                <div class="mega-menu-list">
+                                    <a href="#" class="mega-menu-item" data-modal-target="system-modal" data-system="sales">
+                                        <svg class="mega-menu-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                                        <div class="mega-menu-info">
+                                            <h5 data-ar="إدارة المبيعات" data-en="Sales Management">إدارة المبيعات</h5>
+                                            <p data-ar="الفواتير وعروض الأسعار" data-en="Invoices & quotations">الفواتير وعروض الأسعار</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-modal-target="system-modal" data-system="purchases">
+                                        <svg class="mega-menu-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                                        <div class="mega-menu-info">
+                                            <h5 data-ar="إدارة المشتريات" data-en="Procurement">إدارة المشتريات</h5>
+                                            <p data-ar="أوامر وطلبات الشراء" data-en="Orders & supplier relations">أوامر وطلبات الشراء</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-modal-target="system-modal" data-system="inventory">
+                                        <svg class="mega-menu-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                                        <div class="mega-menu-info">
+                                            <h5 data-ar="إدارة المخازن" data-en="Inventory System">إدارة المخازن</h5>
+                                            <p data-ar="الأرصدة والجرد الدقيق" data-en="Realtime stocks & audit">الأرصدة والجرد الدقيق</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Column 3 -->
+                            <div class="mega-menu-column">
+                                <h4 data-ar="الموارد البشرية والعملاء" data-en="HR & Customers">الموارد البشرية والعملاء</h4>
+                                <div class="mega-menu-list">
+                                    <a href="#" class="mega-menu-item" data-modal-target="system-modal" data-system="hr">
+                                        <svg class="mega-menu-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                                        <div class="mega-menu-info">
+                                            <h5 data-ar="الموارد البشرية" data-en="Human Resources">الموارد البشرية</h5>
+                                            <p data-ar="الرواتب وحماية الأجور" data-en="Payroll & employee relations">الرواتب وحماية الأجور</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-modal-target="system-modal" data-system="crm">
+                                        <svg class="mega-menu-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path></svg>
+                                        <div class="mega-menu-info">
+                                            <h5 data-ar="إدارة العملاء CRM" data-en="CRM System">إدارة العملاء CRM</h5>
+                                            <p data-ar="متابعة الصفقات والفرص" data-en="Leads & support tickets">متابعة الصفقات والفرص</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-modal-target="system-modal" data-system="pos">
+                                        <svg class="mega-menu-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                                        <div class="mega-menu-info">
+                                            <h5 data-ar="نقاط البيع POS" data-en="Point of Sale">نقاط البيع POS</h5>
+                                            <p data-ar="واجهات الكاشير السريعة" data-en="Cashier quick interfaces">واجهات الكاشير السريعة</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Column 4 -->
+                            <div class="mega-menu-column">
+                                <h4 data-ar="الإنتاج والذكاء التقني" data-en="Production & Tech BI">الإنتاج والذكاء التقني</h4>
+                                <div class="mega-menu-list">
+                                    <a href="#" class="mega-menu-item" data-modal-target="system-modal" data-system="manufacturing">
+                                        <svg class="mega-menu-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                        <div class="mega-menu-info">
+                                            <h5 data-ar="التصنيع والإنتاج" data-en="Manufacturing">التصنيع والإنتاج</h5>
+                                            <p data-ar="إدارة خطوط وهيكل المنتج" data-en="BOM & floor routing control">إدارة خطوط وهيكل المنتج</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-modal-target="system-modal" data-system="projects">
+                                        <svg class="mega-menu-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                                        <div class="mega-menu-info">
+                                            <h5 data-ar="إدارة المشاريع" data-en="Project Management">إدارة المشاريع</h5>
+                                            <p data-ar="تتبع المهام ومخطط Gantt" data-en="Gantt charts & timesheets">تتبع المهام ومخطط Gantt</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-modal-target="system-modal" data-system="archiving">
+                                        <svg class="mega-menu-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                                        <div class="mega-menu-info">
+                                            <h5 data-ar="الأرشفة الإلكترونية" data-en="DMS Archiving">الأرشفة الإلكترونية</h5>
+                                            <p data-ar="نظام إدارة وثائق المؤسسة" data-en="Secure cloud document files">نظام إدارة وثائق المؤسسة</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="about.html" class="nav-link" data-ar="من نحن" data-en="About Us">من نحن</a>
+                <a href="services.html" class="nav-link" data-ar="الخدمات" data-en="Services">الخدمات</a>
+                <a href="projects.html" class="nav-link" data-ar="المشاريع" data-en="Projects">المشاريع</a>
+                <a href="clients.html" class="nav-link" data-ar="العملاء" data-en="العملاء">العملاء</a>
+                <a href="blog.html" class="nav-link" data-ar="المدونة" data-en="Blog">المدونة</a>
+                <a href="contact.html" class="nav-link" data-ar="اتصل بنا" data-en="Contact">اتصل بنا</a>
+            </nav>
+            
+            <div class="nav-controls">
+                <!-- Theme Switcher -->
+                <button class="control-btn" id="theme-toggle" title="تغيير المظهر / Toggle Theme">
+                    <svg class="sun-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707.707M12 8a4 4 0 100 8 4 4 0 000-8z"></path></svg>
+                    <svg class="moon-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                </button>
+                
+                <!-- Language Switcher -->
+                <button class="control-btn" id="lang-toggle" title="تغيير اللغة / Switch Language">
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 11.37 7.363 16.5 3 19"></path></svg>
+                </button>
+                
+                <a href="#" data-modal-target="demo-modal" class="nav-cta" data-ar="طلب عرض" data-en="Demo Request">طلب عرض</a>
+                
+                <!-- Mobile Toggle Hamburger -->
+                <button class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Hero Section -->
+    <section class="hero-wrapper">
+        <canvas id="hero-canvas"></canvas>
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <div class="hero-tag">
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 113.536 0V21h2v-2.243a5 5 0 013.536 0V21h-2v-1"></path></svg>
+                    <span data-ar="الجيل الجديد من أنظمة الـ ERP" data-en="Next-Generation Intelligent ERP Systems">الجيل الجديد من أنظمة الـ ERP</span>
+                </div>
+                <h1 class="hero-title">
+                    <span data-ar="Robotsoft ERP" data-en="Robotsoft ERP">Robotsoft ERP</span>
+                    <span data-ar="حلول ذكية لإدارة" data-en="Smart Solutions for">حلول ذكية لإدارة</span>
+                    <span id="typing-text" style="color: var(--primary);"></span>
+                </h1>
+                <p class="hero-desc" data-ar="منظومة متكاملة لربط وأتمتة العمليات المالية، الموارد البشرية، المبيعات، والخدمات اللوجستية في منصة موحدة فائقة الأداء لتسريع نمو أعمالك وتحقيق التحول الرقمي الشامل." data-en="A highly integrated platform to coordinate and automate your financial records, human capital, distributions, and operations inside a single, world-class database built for expansion.">
+                    منظومة متكاملة لربط وأتمتة العمليات المالية، الموارد البشرية، المبيعات، والخدمات اللوجستية في منصة موحدة فائقة الأداء لتسريع نمو أعمالك وتحقيق التحول الرقمي الشامل.
+                </p>
+                <div class="hero-actions">
+                    <a href="#" data-modal-target="demo-modal" class="btn btn-primary">
+                        <span data-ar="ابدأ الآن" data-en="Get Started">ابدأ الآن</span>
+                    </a>
+                    <a href="#systems" class="btn btn-secondary">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                        <span data-ar="مشاهدة الأنظمة" data-en="Explore Modules">مشاهدة الأنظمة</span>
+                    </a>
+                </div>
+                
+                <!-- Counter Numbers -->
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="1000" data-suffix="+">0</div>
+                        <div class="stat-label" data-ar="مستخدم نشط" data-en="Active Users">مستخدم نشط</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="200" data-suffix="+">0</div>
+                        <div class="stat-label" data-ar="منشأة شريكة" data-en="Corporate Partners">منشأة شريكة</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="50" data-suffix="+">0</div>
+                        <div class="stat-label" data-ar="مشروع ناجح" data-en="Completed Projects">مشروع ناجح</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="99" data-suffix="%">0</div>
+                        <div class="stat-label" data-ar="نسبة رضا العملاء" data-en="Client Satisfaction">نسبة رضا العملاء</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual reveal">
+                <div class="visual-bg-glow"></div>
+                <div class="visual-card">
+                    <div class="visual-header">
+                        <div class="visual-dots">
+                            <span class="visual-dot"></span>
+                            <span class="visual-dot"></span>
+                            <span class="visual-dot"></span>
+                        </div>
+                        <div class="visual-title">Robotsoft BI Dashboard</div>
+                    </div>
+                    <div class="visual-chart">
+                        <div class="chart-bar" style="height: 65%;"></div>
+                        <div class="chart-bar"></div>
+                        <div class="chart-bar"></div>
+                        <div class="chart-bar"></div>
+                        <div class="chart-bar"></div>
+                    </div>
+                    <div class="visual-stats-overlay">
+                        <div class="overlay-stat">
+                            <div class="overlay-stat-num">+128%</div>
+                            <div class="overlay-stat-lbl" data-ar="نمو المبيعات" data-en="Sales Growth">نمو المبيعات</div>
+                        </div>
+                        <div class="overlay-stat">
+                            <div class="overlay-stat-num">98.4%</div>
+                            <div class="overlay-stat-lbl" data-ar="أداء التشغيل" data-en="Operational Efficiency">أداء التشغيل</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Systems Catalog Grid -->
+    <section class="section" id="systems">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag" data-ar="تطبيقات متكاملة" data-en="Integrated Modules">تطبيقات متكاملة</span>
+                <h2 class="section-title"><span data-ar="منظومة تطبيقات" data-en="Modular Systems Designed">منظومة تطبيقات</span> <span data-ar="Robotsoft ERP" data-en="for Modern Scale">Robotsoft ERP</span></h2>
+                <p class="section-desc" data-ar="أنظمة مستقلة ولكنها مترابطة بشكل مطلق لتنظيم أعمالك ورفع كفاءة عملياتك في مختلف القطاعات." data-en="Stand-alone applications that function perfectly together, enabling you to coordinate and audit various components of your enterprise.">
+                    أنظمة مستقلة ولكنها مترابطة بشكل مطلق لتنظيم أعمالك ورفع كفاءة عملياتك في مختلف القطاعات.
+                </p>
+            </div>
+            
+            <div class="systems-grid">
+                <!-- Accounting -->
+                <div class="system-card reveal">
+                    <div class="system-card-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="system-card-title" data-ar="النظام المحاسبي والمالي" data-en="Accounting & Finance">النظام المحاسبي والمالي</h3>
+                    <p class="system-card-desc" data-ar="إدارة الحسابات العامة وضرائب القيمة المضافة ومطابقات البنوك مع ربط ZATCA للمرحلة الثانية." data-en="Oversee cost centers, ledgers, vat sheets, and instant trial balances with ZATCA phase 2 integration.">إدارة الحسابات العامة وضرائب القيمة المضافة ومطابقات البنوك مع ربط ZATCA للمرحلة الثانية.</p>
+                    <a href="#" class="system-card-btn" data-modal-target="system-modal" data-system="accounting">
+                        <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Sales -->
+                <div class="system-card reveal">
+                    <div class="system-card-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                    </div>
+                    <h3 class="system-card-title" data-ar="إدارة المبيعات والعملاء" data-en="Sales & Account CRM">إدارة المبيعات والعملاء</h3>
+                    <p class="system-card-desc" data-ar="أتمتة عروض الأسعار وفواتير العملاء وصلاحيات الائتمان وتتبع عمولات مندوبي المبيعات." data-en="Automate sales orders, billing lists, payment alerts, and credit authorizations instantly.">أتمتة عروض الأسعار وفواتير العملاء وصلاحيات الائتمان وتتبع عمولات مندوبي المبيعات.</p>
+                    <a href="#" class="system-card-btn" data-modal-target="system-modal" data-system="sales">
+                        <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Purchases -->
+                <div class="system-card reveal">
+                    <div class="system-card-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="system-card-title" data-ar="إدارة المشتريات والموردين" data-en="Procurement Management">إدارة المشتريات والموردين</h3>
+                    <p class="system-card-desc" data-ar="إدارة مقارنات عروض أسعار الموردين، أوامر الشراء، الدفعات، وأرصدة الموردين الدائنة." data-en="Control supply cycles, purchase requisitions, approval logs, and supplier invoices.">إدارة مقارنات عروض أسعار الموردين، أوامر الشراء، الدفعات، وأرصدة الموردين الدائنة.</p>
+                    <a href="#" class="system-card-btn" data-modal-target="system-modal" data-system="purchases">
+                        <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Inventory -->
+                <div class="system-card reveal">
+                    <div class="system-card-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                    </div>
+                    <h3 class="system-card-title" data-ar="إدارة المخازن والمستودعات" data-en="Inventory Control">إدارة المخازن والمستودعات</h3>
+                    <p class="system-card-desc" data-ar="تتبع الأصناف، متوسطات التكلفة، الجرد بالباركود، التحويل بين المستودعات بمرونة." data-en="Track product serials, FIFO/average cost values, stock transfers, and reorder alerts.">تتبع الأصناف، متوسطات التكلفة، الجرد بالباركود، التحويل بين المستودعات بمرونة.</p>
+                    <a href="#" class="system-card-btn" data-modal-target="system-modal" data-system="inventory">
+                        <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Fixed Assets -->
+                <div class="system-card reveal">
+                    <div class="system-card-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h3 class="system-card-title" data-ar="إدارة الأصول الثابتة" data-en="Fixed Assets Tracker">إدارة الأصول الثابتة</h3>
+                    <p class="system-card-desc" data-ar="حساب الإهلاك التلقائي للأصول وربطها بالمواقع الإدارية والموظفين المسؤولين." data-en="Calculate periodic depreciation charges and map physical equipment locations.">حساب الإهلاك التلقائي للأصول وربطها بالمواقع الإدارية والموظفين المسؤولين.</p>
+                    <a href="#" class="system-card-btn" data-modal-target="system-modal" data-system="assets">
+                        <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <!-- HR -->
+                <div class="system-card reveal">
+                    <div class="system-card-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="system-card-title" data-ar="الموارد البشرية والرواتب" data-en="HR & Payroll Suite">الموارد البشرية والرواتب</h3>
+                    <p class="system-card-desc" data-ar="إدارة شؤون الموظفين، الرواتب والبدلات، البصمة الحيوية وملفات حماية الأجور البنكية." data-en="Manage attendance sheets, vacation logs, loans, and local Wage Protection files.">إدارة شؤون الموظفين، الرواتب والبدلات، البصمة الحيوية وملفات حماية الأجور البنكية.</p>
+                    <a href="#" class="system-card-btn" data-modal-target="system-modal" data-system="hr">
+                        <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <!-- CRM -->
+                <div class="system-card reveal">
+                    <div class="system-card-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path></svg>
+                    </div>
+                    <h3 class="system-card-title" data-ar="إدارة علاقات العملاء CRM" data-en="CRM Customer Care">إدارة علاقات العملاء CRM</h3>
+                    <p class="system-card-desc" data-ar="تتبع العملاء المحتملين والفرص البيعية وتذاكر الدعم الفني لضمان ولاء عملائك." data-en="Track prospective clients, deals status, support tickets, and sales calls logs.">تتبع العملاء المحتملين والفرص البيعية وتذاكر الدعم الفني لضمان ولاء عملائك.</p>
+                    <a href="#" class="system-card-btn" data-modal-target="system-modal" data-system="crm">
+                        <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <!-- POS -->
+                <div class="system-card reveal">
+                    <div class="system-card-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="system-card-title" data-ar="نقاط البيع POS" data-en="POS Cashier Systems">نقاط البيع POS</h3>
+                    <p class="system-card-desc" data-ar="واجهة كاشير سريعة جداً للمبيعات المباشرة تدعم الباركود والعمل أوفلاين." data-en="Deploy high-speed retail checkout registers that run offline with background sync.">واجهة كاشير سريعة جداً للمبيعات المباشرة تدعم الباركود والعمل أوفلاين.</p>
+                    <a href="#" class="system-card-btn" data-modal-target="system-modal" data-system="pos">
+                        <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Manufacturing -->
+                <div class="system-card reveal">
+                    <div class="system-card-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3 class="system-card-title" data-ar="التصنيع والإنتاج" data-en="Manufacturing & MRP">التصنيع والإنتاج</h3>
+                    <p class="system-card-desc" data-ar="تخطيط الاحتياجات MRP، وهيكل المنتجات BOM وتتبع تكاليف خطوط الإنتاج." data-en="Manage manufacturing resources, bills of materials (BOM), and routing costs.">تخطيط الاحتياجات MRP، وهيكل المنتجات BOM وتتبع تكاليف خطوط الإنتاج.</p>
+                    <a href="#" class="system-card-btn" data-modal-target="system-modal" data-system="manufacturing">
+                        <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Projects -->
+                <div class="system-card reveal">
+                    <div class="system-card-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                    </div>
+                    <h3 class="system-card-title" data-ar="إدارة المشاريع والمهام" data-en="Projects & Activities">إدارة المشاريع والمهام</h3>
+                    <p class="system-card-desc" data-ar="توزيع المهام للموظفين، تتبع التكاليف التقديرية، والفوترة ونسب الإنجاز." data-en="Allocate activities, monitor hours spent, and generate progress invoice payouts.">توزيع المهام للموظفين، تتبع التكاليف التقديرية، والفوترة ونسب الإنجاز.</p>
+                    <a href="#" class="system-card-btn" data-modal-target="system-modal" data-system="projects">
+                        <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Archiving -->
+                <div class="system-card reveal">
+                    <div class="system-card-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                    </div>
+                    <h3 class="system-card-title" data-ar="الأرشفة الإلكترونية DMS" data-en="Archiving & Document DMS">الأرشفة الإلكترونية DMS</h3>
+                    <p class="system-card-desc" data-ar="أرشفة المستندات والملفات في مساحة سحابية آمنة تدعم الـ OCR للبحث المتقدم." data-en="Archive records inside an encrypted hub featuring OCR character text-indexing.">أرشفة المستندات والملفات في مساحة سحابية آمنة تدعم الـ OCR للبحث المتقدم.</p>
+                    <a href="#" class="system-card-btn" data-modal-target="system-modal" data-system="archiving">
+                        <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <!-- BI -->
+                <div class="system-card reveal">
+                    <div class="system-card-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2z"></path></svg>
+                    </div>
+                    <h3 class="system-card-title" data-ar="ذكاء الأعمال والتقارير BI" data-en="Business Intelligence BI">ذكاء الأعمال والتقارير BI</h3>
+                    <p class="system-card-desc" data-ar="تحليل أداء الفروع مالياً وتشغيلياً برسوم بيانية ذكية حية تدعم الإدارة العليا." data-en="Build dashboard graphs detailing costs, growth margins, and custom company KPI points.">تحليل أداء الفروع مالياً وتشغيلياً برسوم بيانية ذكية حية تدعم الإدارة العليا.</p>
+                    <a href="#" class="system-card-btn" data-modal-target="system-modal" data-system="bi">
+                        <span data-ar="عرض التفاصيل" data-en="View Details">عرض التفاصيل</span>
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us (Features) Section -->
+    <section class="section section-bg-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag" data-ar="قوتنا ومزايانا" data-en="Why Choose Us">قوتنا ومزايانا</span>
+                <h2 class="section-title"><span data-ar="لماذا تختار نظام" data-en="Why Companies Rely on">لماذا تختار نظام</span> <span data-ar="Robotsoft ERP؟" data-en="Robotsoft ERP">Robotsoft ERP؟</span></h2>
+                <p class="section-desc" data-ar="نحن لا نبيع نظاماً فقط، بل نبني شريكاً تقنياً يرافق نمو أعمالك ويدعم تحولك الرقمي." data-en="We deliver a long-term technology partnership aligned with your growth requirements.">
+                    نحن لا نبيع نظاماً فقط، بل نبني شريكاً تقنياً يرافق نمو أعمالك ويدعم تحولك الرقمي.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <!-- 1 -->
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrapper">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="feature-title" data-ar="واجهات عصرية فائقة السهولة" data-en="Ultra-Modern User Interface">واجهات عصرية فائقة السهولة</h3>
+                    <p class="feature-desc" data-ar="تصاميم مريحة للعين وسهلة الفهم تقلل زمن تدريب الكادر الوظيفي وتزيد من الإنتاجية اليومية." data-en="Clean UI and streamlined patterns reduce internal team training hours while keeping workflows efficient.">تصاميم مريحة للعين وسهلة الفهم تقلل زمن تدريب الكادر الوظيفي وتزيد من الإنتاجية اليومية.</p>
+                </div>
+                <!-- 2 -->
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrapper">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="feature-title" data-ar="أمان وحماية بيانات فائقة" data-en="Advanced Enterprise Security">أمان وحماية بيانات فائقة</h3>
+                    <p class="feature-desc" data-ar="تشفير كامل للبيانات وتحديد دقيق لصلاحيات المستخدمين مع تشغيل نسخ احتياطية مؤتمتة." data-en="Keep corporate databases fully encrypted with fine-grained access rules and automated backups.">تشفير كامل للبيانات وتحديد دقيق لصلاحيات المستخدمين مع تشغيل نسخ احتياطية مؤتمتة.</p>
+                </div>
+                <!-- 3 -->
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrapper">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+                    </div>
+                    <h3 class="feature-title" data-ar="حلول سحابية ومحلية" data-en="Hybrid Cloud & On-Premise">حلول سحابية ومحلية</h3>
+                    <p class="feature-desc" data-ar="إمكانية تشغيل النظام في خوادم سحابية آمنة أو تثبيته محلياً على شبكة خوادم شركتك الخاصة." data-en="Deploy cloud subscriptions or install local database networks inside your secure server rooms.">إمكانية تشغيل النظام في خوادم سحابية آمنة أو تثبيته محلياً على شبكة خوادم شركتك الخاصة.</p>
+                </div>
+                <!-- 4 -->
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrapper">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h3 class="feature-title" data-ar="تعدد الفروع والشركات" data-en="Multi-Branch Consolidation">تعدد الفروع والشركات</h3>
+                    <p class="feature-desc" data-ar="دعم كامل للمجموعات القابضة لإدارة عدة أنشطة وفروع بعملات وسياسات تسعير مختلفة." data-en="Operate holding business scales with multi-currency policies and unified branch ledgers.">دعم كامل للمجموعات القابضة لإدارة عدة أنشطة وفروع بعملات وسياسات تسعير مختلفة.</p>
+                </div>
+                <!-- 5 -->
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrapper">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 11.37 7.363 16.5 3 19"></path></svg>
+                    </div>
+                    <h3 class="feature-title" data-ar="ثنائي اللغة (عربي / إنجليزي)" data-en="Fully Bilingual (AR / EN)">ثنائي اللغة (عربي / إنجليزي)</h3>
+                    <p class="feature-desc" data-ar="واجهات مستخدم تتبدل بالكامل من اليمين لليسار أو العكس مع حفظ تفضيلات كل موظف." data-en="RTL and LTR layouts translate instantly, saving unique profile configurations per employee.">واجهات مستخدم تتبدل بالكامل من اليمين لليسار أو العكس مع حفظ تفضيلات كل موظف.</p>
+                </div>
+                <!-- 6 -->
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrapper">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    </div>
+                    <h3 class="feature-title" data-ar="دعم فني متكامل ومستمر" data-en="24/7 Premium Support">دعم فني متكامل ومستمر</h3>
+                    <p class="feature-desc" data-ar="فريق متخصص لمرافقة منشأتك بالاستشارات والتدريب وحل المشكلات على مدار الساعة." data-en="Direct helpline access, custom user guides, and dedicated support engineering at your service.">فريق متخصص لمرافقة منشأتك بالاستشارات والتدريب وحل المشكلات على مدار الساعة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Slider Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag" data-ar="شركاء النجاح" data-en="Success Partners">شركاء النجاح</span>
+                <h2 class="section-title"><span data-ar="ماذا يقول عملاؤنا عن" data-en="What Corporate Leaders Say">ماذا يقول عملاؤنا عن</span> <span data-ar="أنظمتنا؟" data-en="About Robotsoft">أنظمتنا؟</span></h2>
+            </div>
+            
+            <div class="testimonials-slider-container reveal">
+                <div class="testimonials-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <svg class="testimonial-quote-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M14 17h3l2-4V7h-6v6h3M5 17h3l2-4V7H4v6h3l-2 4z"></path></svg>
+                            <p class="testimonial-text" data-ar="&ldquo;ساعدنا نظام Robotsoft ERP في ربط فروعنا ومخازننا الخمسة المنتشرة في المملكة بنظام محاسبي مركزي واحد. أصبح الجرد سهلاً وتحديث المبيعات والضرائب يتم بشكل آلي وآمن تماماً.&rdquo;" data-en="&ldquo;Robotsoft ERP enabled us to connect our 5 separate regional branches into a single consolidated ledger. Real-time inventory valuations and ZATCA compliance became completely automated.&rdquo;">
+                                &ldquo;ساعدنا نظام Robotsoft ERP في ربط فروعنا ومخازننا الخمسة المنتشرة في المملكة بنظام محاسبي مركزي واحد. أصبح الجرد سهلاً وتحديث المبيعات والضرائب يتم بشكل آلي وآمن تماماً.&rdquo;
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%232563eb'/><text x='50%' y='60%' font-size='40' fill='white' font-family='sans-serif' text-anchor='middle'>M</text></svg>" alt="Avatar" class="testimonial-avatar">
+                                <span class="testimonial-name" data-ar="م. محمد القحطاني" data-en="Eng. Mohammed Al-Qahtani">م. محمد القحطاني</span>
+                                <span class="testimonial-role" data-ar="الرئيس التنفيذي | شركة الأركان اللوجستية" data-en="CEO | Al-Arkan Logistics">الرئيس التنفيذي | شركة الأركان اللوجستية</span>
+                                <div class="testimonial-rating">
+                                    <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <svg class="testimonial-quote-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M14 17h3l2-4V7h-6v6h3M5 17h3l2-4V7H4v6h3l-2 4z"></path></svg>
+                            <p class="testimonial-text" data-ar="&ldquo;الدعم الفني والتدريب الميداني الذي حصلنا عليه من مهندسي Robotsoft كان استثنائياً. لم نجد صعوبة في الترحيل من نظامنا المحاسبي القديم، بل تمت عملية التهيئة بسلاسة وبلا تعطل للعمل.&rdquo;" data-en="&ldquo;The support engineering and user training provided by Robotsoft were outstanding. Migrating legacy accounting tables to their newer cloud database structure was executed without any downtime.&rdquo;">
+                                &ldquo;الدعم الفني والتدريب الميداني الذي حصلنا عليه من مهندسي Robotsoft كان استثنائياً. لم نجد صعوبة في الترحيل من نظامنا المحاسبي القديم، بل تمت عملية التهيئة بسلاسة وبلا تعطل للعمل.&rdquo;
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%2306b6d4'/><text x='50%' y='60%' font-size='40' fill='white' font-family='sans-serif' text-anchor='middle'>A</text></svg>" alt="Avatar" class="testimonial-avatar">
+                                <span class="testimonial-name" data-ar="أ. أحمد السويدي" data-en="Mr. Ahmed Al-Suwaidi">أ. أحمد السويدي</span>
+                                <span class="testimonial-role" data-ar="المدير المالي | مجموعة السويدي للتجارة" data-en="CFO | Al-Suwaidi Group">المدير المالي | مجموعة السويدي للتجارة</span>
+                                <div class="testimonial-rating">
+                                    <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="slider-nav slider-nav-prev control-btn">
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <button class="slider-nav slider-nav-next control-btn">
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+                
+                <div class="slider-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Ticker Section -->
+    <section class="section section-bg-alt" style="padding: 60px 0;">
+        <div class="container">
+            <h3 style="text-align: center; font-size: 1.1rem; color: var(--text-muted); font-weight: 700; margin-bottom: 2rem;" data-ar="مؤسسات تثق بنظمنا في إدارة دورتها التشغيلية" data-en="Trusted by Leading Companies Globally">مؤسسات تثق بنظمنا في إدارة دورتها التشغيلية</h3>
+            <div class="logos-carousel-container reveal">
+                <div class="logos-track">
+                    <!-- Client SVGs placeholders -->
+                    <div class="client-logo-item">
+                        <svg viewBox="0 0 200 60" fill="currentColor" style="color:var(--text-secondary);"><text x="20" y="40" font-size="28" font-weight="900" font-family="sans-serif">AL-JABR</text></svg>
+                    </div>
+                    <div class="client-logo-item">
+                        <svg viewBox="0 0 200 60" fill="currentColor" style="color:var(--text-secondary);"><text x="20" y="40" font-size="28" font-weight="900" font-family="sans-serif">TAZAJ</text></svg>
+                    </div>
+                    <div class="client-logo-item">
+                        <svg viewBox="0 0 200 60" fill="currentColor" style="color:var(--text-secondary);"><text x="20" y="40" font-size="28" font-weight="900" font-family="sans-serif">SADARA</text></svg>
+                    </div>
+                    <div class="client-logo-item">
+                        <svg viewBox="0 0 200 60" fill="currentColor" style="color:var(--text-secondary);"><text x="20" y="40" font-size="28" font-weight="900" font-family="sans-serif">NESMA</text></svg>
+                    </div>
+                    <div class="client-logo-item">
+                        <svg viewBox="0 0 200 60" fill="currentColor" style="color:var(--text-secondary);"><text x="20" y="40" font-size="28" font-weight="900" font-family="sans-serif">BINLADIN</text></svg>
+                    </div>
+                    <!-- Duplicate for infinite track -->
+                    <div class="client-logo-item">
+                        <svg viewBox="0 0 200 60" fill="currentColor" style="color:var(--text-secondary);"><text x="20" y="40" font-size="28" font-weight="900" font-family="sans-serif">AL-JABR</text></svg>
+                    </div>
+                    <div class="client-logo-item">
+                        <svg viewBox="0 0 200 60" fill="currentColor" style="color:var(--text-secondary);"><text x="20" y="40" font-size="28" font-weight="900" font-family="sans-serif">TAZAJ</text></svg>
+                    </div>
+                    <div class="client-logo-item">
+                        <svg viewBox="0 0 200 60" fill="currentColor" style="color:var(--text-secondary);"><text x="20" y="40" font-size="28" font-weight="900" font-family="sans-serif">SADARA</text></svg>
+                    </div>
+                    <div class="client-logo-item">
+                        <svg viewBox="0 0 200 60" fill="currentColor" style="color:var(--text-secondary);"><text x="20" y="40" font-size="28" font-weight="900" font-family="sans-serif">NESMA</text></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mini FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag" data-ar="الأسئلة المتكررة" data-en="FAQs">الأسئلة المتكررة</span>
+                <h2 class="section-title"><span data-ar="استفسارات شائعة حول" data-en="Frequently Asked Questions">استفسارات شائعة حول</span> <span data-ar="Robotsoft ERP" data-en="about Robotsoft">Robotsoft ERP</span></h2>
+            </div>
+            
+            <div class="faq-grid reveal">
+                <div class="faq-item active">
+                    <div class="faq-header">
+                        <h3 class="faq-question" data-ar="هل يدعم النظام الربط مع هيئة الزكاة والضريبة والجمارك (فاتورة)؟" data-en="Is the system ZATCA (Fatoora) Phase 2 compliant?">هل يدعم النظام الربط مع هيئة الزكاة والضريبة والجمارك (فاتورة)؟</h3>
+                        <div class="faq-toggle">
+                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div class="faq-body">
+                        <div class="faq-content">
+                            <p class="faq-answer" data-ar="نعم، جميع إصدارات أنظمة Robotsoft متوافقة بالكامل بنسبة 100% مع متطلبات المرحلة الأولى والثانية (مرحلة الربط والدمج الفني) لإصدار الفواتير الضريبية والمبسطة والربط المباشر مع منصة فاتورة." data-en="Yes, all Robotsoft ERP installations are fully certified and ready for ZATCA Phase 1 (generation) and Phase 2 (integration/API linking) standard/simplified e-invoices.">
+                                نعم، جميع إصدارات أنظمة Robotsoft متوافقة بالكامل بنسبة 100% مع متطلبات المرحلة الأولى والثانية (مرحلة الربط والدمج الفني) لإصدار الفواتير الضريبية والمبسطة والربط المباشر مع منصة فاتورة.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h3 class="faq-question" data-ar="ما هي مدة تهيئة وتركيب النظام داخل الشركة؟" data-en="How long does implementation take?">ما هي مدة تهيئة وتركيب النظام داخل الشركة؟</h3>
+                        <div class="faq-toggle">
+                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    <div class="faq-body">
+                        <div class="faq-content">
+                            <p class="faq-answer" data-ar="تختلف مدة التركيب بحسب حجم المنشأة وتعدد الفروع المطلوبة، ولكن بالمتوسط تستغرق فترة تهيئة الحسابات، ورفع الأصناف وتدريب الموظفين فترة تتراوح بين 10 إلى 25 يوماً فقط." data-en="Implementation timelines vary based on modules selected and branches counts. Average setups, customer charts upload, and basic training require 10 to 25 business days to go completely live.">
+                                تختلف مدة التركيب بحسب حجم المنشأة وتعدد الفروع المطلوبة، ولكن بالمتوسط تستغرق فترة تهيئة الحسابات، ورفع الأصناف وتدريب الموظفين فترة تتراوح بين 10 إلى 25 يوماً فقط.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="faq.html" class="btn btn-secondary">
+                    <span data-ar="عرض كافة الأسئلة الشائعة" data-en="View All FAQs">عرض كافة الأسئلة الشائعة</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-logo-panel">
+                <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+                    <img src="assets/logo.jpeg" alt="Robotsoft Logo" class="logo-img">
+                    <span data-ar="روبوت سوفت" data-en="Robotsoft ERP">روبوت سوفت</span>
+                </a>
+                <p data-ar="مؤسستنا متخصصة في توفير الحلول البرمجية المتكاملة وتطوير المنظومات المالية والإدارية الكبرى لتحقيق الريادة التقنية." data-en="Specialized in building integrated corporate applications, ledgers, and custom scale systems to drive business automation.">
+                    مؤسستنا متخصصة في توفير الحلول البرمجية المتكاملة وتطوير المنظومات المالية والإدارية الكبرى لتحقيق الريادة التقنية.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a>
+                    <a href="#" class="social-link"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg></a>
+                </div>
+            </div>
+            
+            <div class="footer-nav-panel">
+                <h4 data-ar="صفحات الموقع" data-en="Navigation">صفحات الموقع</h4>
+                <ul class="footer-list">
+                    <li><a href="about.html" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+                    <li><a href="services.html" data-ar="الخدمات والحلول" data-en="Our Services">الخدمات والحلول</a></li>
+                    <li><a href="projects.html" data-ar="معرض المشاريع" data-en="Client Portfolio">معرض المشاريع</a></li>
+                    <li><a href="blog.html" data-ar="المدونة والتقنية" data-en="Tech Blog">المدونة والتقنية</a></li>
+                    <li><a href="privacy.html" data-ar="سياسة الخصوصية" data-en="Privacy Policy">سياسة الخصوصية</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-nav-panel">
+                <h4 data-ar="الأنظمة الأساسية" data-en="Core Systems">الأنظمة الأساسية</h4>
+                <ul class="footer-list">
+                    <li><a href="#" data-modal-target="system-modal" data-system="accounting" data-ar="النظام المحاسبي" data-en="Accounting Ledger">النظام المحاسبي</a></li>
+                    <li><a href="#" data-modal-target="system-modal" data-system="sales" data-ar="إدارة المبيعات" data-en="Sales Hub">إدارة المبيعات</a></li>
+                    <li><a href="#" data-modal-target="system-modal" data-system="hr" data-ar="الموارد البشرية" data-en="HR & Payroll">الموارد البشرية</a></li>
+                    <li><a href="#" data-modal-target="system-modal" data-system="pos" data-ar="نقاط البيع POS" data-en="Point of Sale">نقاط البيع POS</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter-panel">
+                <h4 data-ar="النشرة الإخبارية" data-en="Newsletter Subscription">النشرة الإخبارية</h4>
+                <p class="newsletter-desc" data-ar="اشترك معنا للحصول على آخر المقالات والنصائح الإدارية وعروض المنتجات الدورية." data-en="Receive monthly productivity guidelines, product launches, and discount codes.">
+                    اشترك معنا للحصول على آخر المقالات والنصائح الإدارية وعروض المنتجات الدورية.
+                </p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!')">
+                    <input type="email" class="newsletter-input" required placeholder="name@domain.com" data-ar="عنوان البريد الإلكتروني" data-en="Email Address">
+                    <button type="submit" class="newsletter-btn" data-ar="اشترك" data-en="Subscribe">اشترك</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <span data-ar="&copy; 2026 Robotsoft ERP. جميع الحقوق محفوظة." data-en="&copy; 2026 Robotsoft ERP. All rights reserved.">&copy; 2026 Robotsoft ERP. جميع الحقوق محفوظة.</span>
+            <span data-ar="تصميم وتطوير بواسطة فريق Robotsoft التقني" data-en="Developed by Robotsoft Technical Team">تصميم وتطوير بواسطة فريق Robotsoft التقني</span>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <div class="back-to-top-btn" id="back-to-top" title="العودة للأعلى">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"></path></svg>
+    </div>
+
+    <!-- Modals Container Overlay -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close-btn" id="modal-close">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <div class="modal-content-wrap" id="modal-content">
+                <!-- Filled dynamically by main.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/particles.js"></script>
+</body>
+</html>

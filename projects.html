@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المشاريع | Robotsoft ERP</title>
+<meta name="description" content="معرض مشاريع Robotsoft ERP - أنظمة ERP ونقاط بيع وتطبيقات ويب لمختلف القطاعات.">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.portfolio-card { transition: transform 0.4s, opacity 0.4s; }
+.portfolio-card.hidden { display: none; }
+</style>
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpeg">
+</head>
+<body>
+<div id="loader"><div class="loader-logo"><div class="loader-circle"></div><div class="loader-circle-inner"></div><img src="assets/logo.jpeg" alt="Robotsoft Logo" class="loader-icon-img"></div><div class="loader-bar-container"><div class="loader-bar"></div></div></div>
+<header class="header">
+  <div class="container nav-container">
+    <a href="index.html" class="logo"><img src="assets/logo.jpeg" alt="Robotsoft Logo" class="logo-img"><span data-ar="روبوت سوفت" data-en="Robotsoft">روبوت سوفت</span></a>
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-link" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+      <a href="about.html" class="nav-link" data-ar="من نحن" data-en="About">من نحن</a>
+      <a href="services.html" class="nav-link" data-ar="الخدمات" data-en="Services">الخدمات</a>
+      <a href="projects.html" class="nav-link active" data-ar="المشاريع" data-en="Projects">المشاريع</a>
+      <a href="clients.html" class="nav-link" data-ar="العملاء" data-en="Clients">العملاء</a>
+      <a href="blog.html" class="nav-link" data-ar="المدونة" data-en="Blog">المدونة</a>
+      <a href="contact.html" class="nav-link" data-ar="اتصل بنا" data-en="Contact">اتصل بنا</a>
+    </nav>
+    <div class="nav-controls">
+      <button class="control-btn" id="theme-toggle"><svg class="sun-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707.707M12 8a4 4 0 100 8 4 4 0 000-8z"></path></svg><svg class="moon-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg></button>
+      <button class="control-btn" id="lang-toggle"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 11.37 7.363 16.5 3 19"></path></svg></button>
+      <a href="contact.html" class="nav-cta" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a>
+      <button class="menu-toggle" id="menu-toggle"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container page-hero-container">
+    <h1 class="page-hero-title reveal" data-ar="معرض المشاريع" data-en="Project Portfolio">معرض المشاريع</h1>
+    <div class="page-hero-breadcrumbs"><a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a><span>/</span><span data-ar="المشاريع" data-en="Projects">المشاريع</span></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag" data-ar="أعمالنا" data-en="Our Work">أعمالنا</span>
+      <h2 class="section-title" data-ar="مشاريع <span>نفخر بها</span>" data-en="Projects <span>We're Proud Of</span>">مشاريع <span>نفخر بها</span></h2>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="portfolio-filter-container reveal">
+      <button class="filter-btn active" data-filter="all" data-ar="الكل" data-en="All">الكل</button>
+      <button class="filter-btn" data-filter="erp" data-ar="أنظمة ERP" data-en="ERP Systems">أنظمة ERP</button>
+      <button class="filter-btn" data-filter="pos" data-ar="نقاط البيع" data-en="POS">نقاط البيع</button>
+      <button class="filter-btn" data-filter="web" data-ar="تطبيقات ويب" data-en="Web Apps">تطبيقات ويب</button>
+      <button class="filter-btn" data-filter="bi" data-ar="تقارير BI" data-en="BI Reports">تقارير BI</button>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <div class="portfolio-grid">
+      <!-- Project 1 -->
+      <div class="portfolio-card reveal" data-category="erp">
+        <div class="portfolio-img-wrapper" style="background:linear-gradient(135deg,#1e40af,#0891b2);display:flex;align-items:center;justify-content:center;">
+          <svg style="width:80px;height:80px;color:rgba(255,255,255,0.5);" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+        </div>
+        <div class="portfolio-info">
+          <div class="portfolio-category" data-ar="نظام ERP" data-en="ERP System">نظام ERP</div>
+          <h3 class="portfolio-title" data-ar="مجموعة الأركان للتجارة" data-en="Al-Arkan Trading Group">مجموعة الأركان للتجارة</h3>
+          <p class="portfolio-desc" data-ar="تهيئة نظام ERP متكامل يشمل المحاسبة، المبيعات، المشتريات والمستودعات لمجموعة ذات 7 فروع." data-en="Full ERP setup covering accounting, sales, procurement, and warehouses for a 7-branch enterprise group.">تهيئة نظام ERP متكامل يشمل المحاسبة، المبيعات، المشتريات والمستودعات لمجموعة ذات 7 فروع.</p>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="portfolio-card reveal" data-category="pos">
+        <div class="portfolio-img-wrapper" style="background:linear-gradient(135deg,#7c3aed,#db2777);display:flex;align-items:center;justify-content:center;">
+          <svg style="width:80px;height:80px;color:rgba(255,255,255,0.5);" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+        </div>
+        <div class="portfolio-info">
+          <div class="portfolio-category" data-ar="نقاط البيع" data-en="POS">نقاط البيع</div>
+          <h3 class="portfolio-title" data-ar="سلسلة مطاعم التميمي" data-en="Al-Tamimi Restaurant Chain">سلسلة مطاعم التميمي</h3>
+          <p class="portfolio-desc" data-ar="نظام POS سحابي لـ 15 فرع مطعم مع ربط ZATCA وإدارة الطلبات والمطبخ." data-en="Cloud POS system for 15 restaurant branches with ZATCA integration and kitchen display management.">نظام POS سحابي لـ 15 فرع مطعم مع ربط ZATCA وإدارة الطلبات والمطبخ.</p>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="portfolio-card reveal" data-category="web">
+        <div class="portfolio-img-wrapper" style="background:linear-gradient(135deg,#0d9488,#0284c7);display:flex;align-items:center;justify-content:center;">
+          <svg style="width:80px;height:80px;color:rgba(255,255,255,0.5);" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9"></path></svg>
+        </div>
+        <div class="portfolio-info">
+          <div class="portfolio-category" data-ar="تطبيق ويب" data-en="Web App">تطبيق ويب</div>
+          <h3 class="portfolio-title" data-ar="بوابة موارد بشرية - مجموعة سدير" data-en="HR Portal - Sudayr Group">بوابة موارد بشرية - مجموعة سدير</h3>
+          <p class="portfolio-desc" data-ar="تطبيق ويب خاص لإدارة طلبات الموظفين والإجازات والسلف مع ربط مباشر بنظام الرواتب." data-en="Custom web app for employee requests, leave applications, and advances integrated with payroll.">تطبيق ويب خاص لإدارة طلبات الموظفين والإجازات والسلف مع ربط مباشر بنظام الرواتب.</p>
+        </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="portfolio-card reveal" data-category="bi">
+        <div class="portfolio-img-wrapper" style="background:linear-gradient(135deg,#f59e0b,#ef4444);display:flex;align-items:center;justify-content:center;">
+          <svg style="width:80px;height:80px;color:rgba(255,255,255,0.5);" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2z"></path></svg>
+        </div>
+        <div class="portfolio-info">
+          <div class="portfolio-category" data-ar="تقارير BI" data-en="BI Reports">تقارير BI</div>
+          <h3 class="portfolio-title" data-ar="لوحة BI - شركة المنار الصناعية" data-en="BI Dashboard - Al-Manar Industrial">لوحة BI - شركة المنار الصناعية</h3>
+          <p class="portfolio-desc" data-ar="لوحة تحكم تحليلية شاملة لمراقبة الأداء المالي والإنتاجي في الوقت الفعلي." data-en="Comprehensive analytics dashboard for real-time financial and production performance monitoring.">لوحة تحكم تحليلية شاملة لمراقبة الأداء المالي والإنتاجي في الوقت الفعلي.</p>
+        </div>
+      </div>
+      <!-- Project 5 -->
+      <div class="portfolio-card reveal" data-category="erp">
+        <div class="portfolio-img-wrapper" style="background:linear-gradient(135deg,#1e3a8a,#312e81);display:flex;align-items:center;justify-content:center;">
+          <svg style="width:80px;height:80px;color:rgba(255,255,255,0.5);" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+        </div>
+        <div class="portfolio-info">
+          <div class="portfolio-category" data-ar="نظام ERP" data-en="ERP System">نظام ERP</div>
+          <h3 class="portfolio-title" data-ar="شركة النخبة للمقاولات" data-en="Al-Nukhba Contracting Co.">شركة النخبة للمقاولات</h3>
+          <p class="portfolio-desc" data-ar="تطبيق نظام موارد بشرية ورواتب متكامل لـ 800 موظف مع ربط أجهزة البصمة البيومترية." data-en="Complete HR and payroll system for 800 employees with biometric fingerprint machine integration.">تطبيق نظام موارد بشرية ورواتب متكامل لـ 800 موظف مع ربط أجهزة البصمة البيومترية.</p>
+        </div>
+      </div>
+      <!-- Project 6 -->
+      <div class="portfolio-card reveal" data-category="web">
+        <div class="portfolio-img-wrapper" style="background:linear-gradient(135deg,#064e3b,#065f46);display:flex;align-items:center;justify-content:center;">
+          <svg style="width:80px;height:80px;color:rgba(255,255,255,0.5);" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+        </div>
+        <div class="portfolio-info">
+          <div class="portfolio-category" data-ar="أرشفة إلكترونية" data-en="Digital Archiving">أرشفة إلكترونية</div>
+          <h3 class="portfolio-title" data-ar="بنك الوثائق - وزارة حكومية" data-en="Document Bank - Government Entity">بنك الوثائق - جهة حكومية</h3>
+          <p class="portfolio-desc" data-ar="نظام أرشفة سحابي شامل لحفظ وفهرسة آلاف الوثائق الرسمية مع نظام بحث OCR متقدم." data-en="Comprehensive cloud archiving for thousands of official documents with advanced OCR search indexing.">نظام أرشفة سحابي شامل لحفظ وفهرسة آلاف الوثائق الرسمية مع نظام بحث OCR متقدم.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-logo-panel"><a href="index.html" class="logo" style="margin-bottom:1rem;"><img src="assets/logo.jpeg" alt="Robotsoft Logo" class="logo-img"><span>روبوت سوفت</span></a><p data-ar="شريكك التقني." data-en="Your technology partner.">شريكك التقني.</p></div>
+    <div class="footer-nav-panel"><h4 data-ar="الصفحات" data-en="Pages">الصفحات</h4><ul class="footer-list"><li><a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li><li><a href="about.html" data-ar="من نحن" data-en="About">من نحن</a></li><li><a href="services.html" data-ar="الخدمات" data-en="Services">الخدمات</a></li><li><a href="contact.html" data-ar="اتصل بنا" data-en="Contact">اتصل بنا</a></li></ul></div>
+    <div class="footer-nav-panel"><h4 data-ar="الأنظمة" data-en="Systems">الأنظمة</h4><ul class="footer-list"><li><a href="index.html#systems" data-ar="النظام المحاسبي" data-en="Accounting">النظام المحاسبي</a></li><li><a href="index.html#systems" data-ar="الموارد البشرية" data-en="HR">الموارد البشرية</a></li><li><a href="index.html#systems" data-ar="نقاط البيع" data-en="POS">نقاط البيع</a></li></ul></div>
+    <div class="footer-newsletter-panel"><h4 data-ar="النشرة البريدية" data-en="Newsletter">النشرة البريدية</h4><p class="newsletter-desc" data-ar="اشترك للحصول على آخر الأخبار." data-en="Stay updated with our latest news.">اشترك للحصول على آخر الأخبار.</p><form class="newsletter-form" onsubmit="event.preventDefault();"><input type="email" class="newsletter-input" placeholder="name@domain.com"><button class="newsletter-btn" data-ar="اشترك" data-en="Subscribe">اشترك</button></form></div>
+  </div>
+  <div class="container footer-bottom"><span data-ar="© 2026 Robotsoft ERP. جميع الحقوق محفوظة." data-en="© 2026 Robotsoft ERP. All rights reserved.">© 2026 Robotsoft ERP. جميع الحقوق محفوظة.</span></div>
+</footer>
+<div class="back-to-top-btn" id="back-to-top"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"></path></svg></div>
+<div class="modal-overlay" id="modal-overlay"><div class="modal-window"><button class="modal-close-btn" id="modal-close"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg></button><div class="modal-content-wrap" id="modal-content"></div></div></div>
+<script src="js/main.js"></script>
+</body>
+</html>

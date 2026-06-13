@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المدونة التقنية | Robotsoft ERP</title>
+    <meta name="description" content="مقالات تقنية وإدارية حول أنظمة الـ ERP، المحاسبة، التحول الرقمي وأتمتة العمليات للشركات والمؤسسات.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpeg">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-logo">
+            <div class="loader-circle"></div>
+            <div class="loader-circle-inner"></div>
+            <img src="assets/logo.jpeg" alt="Robotsoft Logo" class="loader-icon-img">
+        </div>
+        <div class="loader-bar-container"><div class="loader-bar"></div></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.jpeg" alt="Robotsoft Logo" class="logo-img">
+                <span data-ar="روبوت سوفت" data-en="Robotsoft ERP">روبوت سوفت</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                <a href="about.html" class="nav-link" data-ar="من نحن" data-en="About Us">من نحن</a>
+                <a href="services.html" class="nav-link" data-ar="الخدمات" data-en="Services">الخدمات</a>
+                <a href="projects.html" class="nav-link" data-ar="المشاريع" data-en="Projects">المشاريع</a>
+                <a href="clients.html" class="nav-link" data-ar="العملاء" data-en="Clients">العملاء</a>
+                <a href="blog.html" class="nav-link active" data-ar="المدونة" data-en="Blog">المدونة</a>
+                <a href="contact.html" class="nav-link" data-ar="اتصل بنا" data-en="Contact">اتصل بنا</a>
+            </nav>
+            <div class="nav-controls">
+                <button class="control-btn" id="theme-toggle">
+                    <svg class="sun-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707.707M12 8a4 4 0 100 8 4 4 0 000-8z"></path></svg>
+                    <svg class="moon-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                </button>
+                <button class="control-btn" id="lang-toggle">
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 11.37 7.363 16.5 3 19"></path></svg>
+                </button>
+                <a href="contact.html" class="nav-cta" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a>
+                <button class="menu-toggle" id="menu-toggle"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container page-hero-container">
+            <h1 class="page-hero-title reveal" data-ar="المدونة والمعرفة" data-en="Resource Center & Blog">المدونة والمعرفة</h1>
+            <div class="page-hero-breadcrumbs">
+                <a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                <span>/</span>
+                <span data-ar="المدونة" data-en="Blog">المدونة</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Area -->
+    <section class="section">
+        <div class="container blog-container-layout" style="display:grid;grid-template-columns:3fr 1fr;gap:3rem;">
+            <!-- Post Lists -->
+            <div class="blog-posts-list">
+                <!-- Featured Article Card -->
+                <div class="portfolio-card reveal" style="margin-bottom:3rem;grid-template-columns:1fr;">
+                    <div class="portfolio-img-wrapper" style="height:350px;background:linear-gradient(135deg,#1e3a8a,#0f172a);display:flex;align-items:center;justify-content:center;">
+                        <svg style="width:100px;height:100px;color:rgba(255,255,255,0.4);" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+                    </div>
+                    <div class="portfolio-info" style="padding:2rem;">
+                        <div style="display:flex;gap:1rem;font-size:0.85rem;color:var(--text-muted);margin-bottom:1rem;">
+                            <span>📅 13 يونيو 2026</span>
+                            <span>🏷️ التحول الرقمي</span>
+                        </div>
+                        <h2 style="font-size:1.8rem;font-weight:800;color:var(--text-primary);margin-bottom:1rem;" data-ar="أهمية تطبيق نظام الـ ERP في أتمتة الشركات الكبرى" data-en="The Power of ERP Systems in Automating Enterprise Workflows">أهمية تطبيق نظام الـ ERP في أتمتة الشركات الكبرى</h2>
+                        <p style="color:var(--text-secondary);line-height:1.7;margin-bottom:1.5rem;" data-ar="في ظل وتيرة السوق المتسارعة، أصبح دمج العمليات المالية واللوجستية في قاعدة بيانات واحدة ضرورة ملحة. نستعرض في هذه المقالة التفصيلية كيف يساهم نظام تخطيط الموارد (ERP) في خفض النفقات وزيادة كفاءة الإشراف الإداري والمالي." data-en="In a highly competitive environment, integrating financial records and supply chains inside a unified database is no longer optional. We explore how Modern ERP applications minimize operational costs and optimize administrative auditing.">في ظل وتيرة السوق المتسارعة، أصبح دمج العمليات المالية واللوجستية في قاعدة بيانات واحدة ضرورة ملحة. نستعرض في هذه المقالة التفصيلية كيف يساهم نظام تخطيط الموارد (ERP) في خفض النفقات وزيادة كفاءة الإشراف الإداري والمالي.</p>
+                        <a href="#" class="btn btn-secondary" style="width:fit-content;" data-ar="اقرأ المزيد" data-en="Read Full Article">اقرأ المزيد</a>
+                    </div>
+                </div>
+
+                <!-- Grid of Articles -->
+                <div class="systems-grid" style="grid-template-columns:repeat(2,1fr);gap:2rem;">
+                    <!-- Post 1 -->
+                    <div class="portfolio-card reveal">
+                        <div class="portfolio-img-wrapper" style="height:200px;background:linear-gradient(135deg,#047857,#065f46);display:flex;align-items:center;justify-content:center;">
+                            <svg style="width:60px;height:60px;color:rgba(255,255,255,0.4);" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <div class="portfolio-info">
+                            <div style="font-size:0.8rem;color:var(--text-muted);margin-bottom:0.5rem;">📅 10 يونيو 2026</div>
+                            <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:0.5rem;" data-ar="دليلك الشامل للامتثال لمتطلبات هيئة الزكاة (فاتورة)" data-en="A Comprehensive Guide to ZATCA E-Invoicing Phase 2">دليلك الشامل للامتثال لمتطلبات هيئة الزكاة (فاتورة)</h3>
+                            <p style="font-size:0.95rem;color:var(--text-secondary);" data-ar="خطوات الربط التقني والدمج لشركتك وتفادي الغرامات المالية مع Robotsoft." data-en="Key steps for API integration to avoid non-compliance fines.">خطوات الربط التقني والدمج لشركتك وتفادي الغرامات المالية مع Robotsoft.</p>
+                        </div>
+                    </div>
+                    <!-- Post 2 -->
+                    <div class="portfolio-card reveal">
+                        <div class="portfolio-img-wrapper" style="height:200px;background:linear-gradient(135deg,#7c3aed,#5b21b6);display:flex;align-items:center;justify-content:center;">
+                            <svg style="width:60px;height:60px;color:rgba(255,255,255,0.4);" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <div class="portfolio-info">
+                            <div style="font-size:0.8rem;color:var(--text-muted);margin-bottom:0.5rem;">📅 05 يونيو 2026</div>
+                            <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:0.5rem;" data-ar="كيف تختار نظام المحاسبة المناسب لنشاطك التجاري؟" data-en="Choosing the Right Accounting Ledger for Your Business Scale">كيف تختار نظام المحاسبة المناسب لنشاطك التجاري؟</h3>
+                            <p style="font-size:0.95rem;color:var(--text-secondary);" data-ar="النقاط الفنية والمالية الواجب مقارنتها قبل اختيار حزمتك المحاسبية." data-en="Critical technical points to analyze before picking your accounting system.">النقاط الفنية والمالية الواجب مقارنتها قبل اختيار حزمتك المحاسبية.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Search / Tags / Recent -->
+            <div class="blog-sidebar reveal" style="display:flex;flex-direction:column;gap:2rem;">
+                <!-- Search Widget -->
+                <div style="background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:var(--border-radius-lg);padding:1.5rem;">
+                    <h4 style="font-weight:800;margin-bottom:1rem;" data-ar="بحث" data-en="Search">بحث</h4>
+                    <form onsubmit="event.preventDefault();" style="display:flex;gap:0.5rem;">
+                        <input type="text" style="flex:1;background:var(--bg-primary);border:1px solid var(--border-color);border-radius:var(--border-radius-md);padding:0.6rem;color:var(--text-primary);" data-ar="بحث في المدونة..." data-en="Search articles..." placeholder="بحث في المدونة...">
+                        <button class="btn btn-primary" style="padding:0.6rem 1rem;"><svg style="width:16px;height:16px;color:#fff;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+                    </form>
+                </div>
+
+                <!-- Categories Widget -->
+                <div style="background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:var(--border-radius-lg);padding:1.5rem;">
+                    <h4 style="font-weight:800;margin-bottom:1rem;" data-ar="التصنيفات" data-en="Categories">التصنيفات</h4>
+                    <ul style="list-style:none;display:flex;flex-direction:column;gap:0.75rem;">
+                        <li><a href="#" style="color:var(--text-secondary);font-size:0.95rem;display:flex;justify-content:between;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-secondary)'"><span data-ar="أنظمة الـ ERP" data-en="ERP Systems">أنظمة الـ ERP</span> <span>(12)</span></a></li>
+                        <li><a href="#" style="color:var(--text-secondary);font-size:0.95rem;display:flex;justify-content:between;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-secondary)'"><span data-ar="المحاسبة والضرائب" data-en="Finance & Taxes">المحاسبة والضرائب</span> <span>(8)</span></a></li>
+                        <li><a href="#" style="color:var(--text-secondary);font-size:0.95rem;display:flex;justify-content:between;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-secondary)'"><span data-ar="أدلة التحول الرقمي" data-en="Digital Guides">أدلة التحول الرقمي</span> <span>(15)</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Popular Tags -->
+                <div style="background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:var(--border-radius-lg);padding:1.5rem;">
+                    <h4 style="font-weight:800;margin-bottom:1rem;" data-ar="الوسوم الشائعة" data-en="Popular Tags">الوسوم الشائعة</h4>
+                    <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+                        <a href="#" style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:var(--border-radius-sm);padding:0.4rem 0.8rem;font-size:0.85rem;color:var(--text-secondary);transition:all 0.3s;" onmouseover="this.style.borderColor='var(--primary)';this.style.color='var(--primary)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.color='var(--text-secondary)'">#ZATCA</a>
+                        <a href="#" style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:var(--border-radius-sm);padding:0.4rem 0.8rem;font-size:0.85rem;color:var(--text-secondary);transition:all 0.3s;" onmouseover="this.style.borderColor='var(--primary)';this.style.color='var(--primary)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.color='var(--text-secondary)'">#أتمتة</a>
+                        <a href="#" style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:var(--border-radius-sm);padding:0.4rem 0.8rem;font-size:0.85rem;color:var(--text-secondary);transition:all 0.3s;" onmouseover="this.style.borderColor='var(--primary)';this.style.color='var(--primary)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.color='var(--text-secondary)'">#ERP</a>
+                        <a href="#" style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:var(--border-radius-sm);padding:0.4rem 0.8rem;font-size:0.85rem;color:var(--text-secondary);transition:all 0.3s;" onmouseover="this.style.borderColor='var(--primary)';this.style.color='var(--primary)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.color='var(--text-secondary)'">#SaaS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-logo-panel">
+                <a href="index.html" class="logo" style="margin-bottom:1rem;">
+                    <img src="assets/logo.jpeg" alt="Robotsoft Logo" class="logo-img">
+                    <span data-ar="روبوت سوفت" data-en="Robotsoft ERP">روبوت سوفت</span>
+                </a>
+                <p data-ar="شريكك التقني نحو التحول الرقمي." data-en="Your technology partner for digital transformation.">شريكك التقني نحو التحول الرقمي.</p>
+            </div>
+            <div class="footer-nav-panel"><h4 data-ar="الصفحات" data-en="Pages">الصفحات</h4><ul class="footer-list"><li><a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li><li><a href="about.html" data-ar="من نحن" data-en="About">من نحن</a></li><li><a href="services.html" data-ar="الخدمات" data-en="Services">الخدمات</a></li><li><a href="contact.html" data-ar="اتصل بنا" data-en="Contact">اتصل بنا</a></li></ul></div>
+            <div class="footer-nav-panel"><h4 data-ar="الأنظمة" data-en="Systems">الأنظمة</h4><ul class="footer-list"><li><a href="index.html#systems" data-ar="النظام المحاسبي" data-en="Accounting">النظام المحاسبي</a></li><li><a href="index.html#systems" data-ar="الموارد البشرية" data-en="HR & Payroll">الموارد البشرية</a></li><li><a href="index.html#systems" data-ar="نقاط البيع" data-en="POS">نقاط البيع</a></li></ul></div>
+            <div class="footer-newsletter-panel"><h4 data-ar="النشرة البريدية" data-en="Newsletter">النشرة البريدية</h4><p class="newsletter-desc" data-ar="اشترك للحصول على آخر الأخبار." data-en="Get the latest news and updates.">اشترك للحصول على آخر الأخبار.</p><form class="newsletter-form" onsubmit="event.preventDefault();"><input type="email" class="newsletter-input" placeholder="name@domain.com"><button class="newsletter-btn" type="submit" data-ar="اشترك" data-en="Subscribe">اشترك</button></form></div>
+        </div>
+        <div class="container footer-bottom"><span data-ar="© 2026 Robotsoft ERP. جميع الحقوق محفوظة." data-en="© 2026 Robotsoft ERP. All rights reserved.">© 2026 Robotsoft ERP. جميع الحقوق محفوظة.</span></div>
+    </footer>
+    
+    <div class="back-to-top-btn" id="back-to-top"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"></path></svg></div>
+    <div class="modal-overlay" id="modal-overlay"><div class="modal-window"><button class="modal-close-btn" id="modal-close"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg></button><div class="modal-content-wrap" id="modal-content"></div></div></div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
