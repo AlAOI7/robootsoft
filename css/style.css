@@ -2227,3 +2227,9 @@ html[lang="ar"] .footer-newsletter-panel h4::after {
     .hero-actions .btn { width: 100%; }
     .section-title { font-size: 2rem; }
 }
+
+/* About Page Grid */
+.about-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: center; }
+@media(min-width: 992px) { .about-grid { grid-template-columns: 1fr 1fr; gap: 4rem; } }
+.about-pillars { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-top: 3rem; }
+@media(min-width: 768px) { .about-pillars { grid-template-columns: repeat(3, 1fr); } }
